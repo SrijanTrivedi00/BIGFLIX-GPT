@@ -14,3 +14,16 @@
     transform: rotateX(10deg);
   }
   
+  /* Add to your global styles */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Optional: Add this for smoother performance */
+.scroll-container {
+  will-change: transform;
+}
